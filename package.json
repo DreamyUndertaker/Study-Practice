@@ -1,11 +1,23 @@
 {
-  "name": "studypractice",
+  "name": "studyPractice",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "parcel index.html --open"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vadim0504/Study-Practice.git"
+  },
+  "keywords": [
+    "Dreamy",
+    "Undertaker"
+  ],
+  "author": "Dreamy Undertaker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vadim0504/Study-Practice/issues"
+  },
+  "homepage": "https://github.com/Vadim0504/Study-Practice"
 }
