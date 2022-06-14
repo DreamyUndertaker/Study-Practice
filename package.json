@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "parcel index.html --open"
+    "watch": "npx parcel src/index.html"
   },
   "repository": {
     "type": "git",
