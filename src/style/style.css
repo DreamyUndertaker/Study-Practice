@@ -1,12 +1,19 @@
 body{
     width: 1200px;
     margin: auto;
+
+    background-color:white;
 }
 .upHeader{
     display: grid;
     grid-template-areas: "login sightin";
     justify-items: center;
+
+    background-color: cornsilk;
+    
+    height: 60px;
 }
+
 .logIn{
     grid-area: login;
     font-size: 20px;
@@ -23,7 +30,11 @@ body{
     display: grid;
     grid-template-areas: "logo town search addCompany";
     grid-template-columns: 0.7fr 0.5fr 2fr 2fr;
-    grid-gap: 40px
+    grid-gap: 40px;
+
+    background-color: white;
+    position: sticky;
+    top: 0;
 }
 .logo{
     grid-area: logo;
@@ -110,68 +121,214 @@ body{
 
     text-align: center;
     border: 0.5px solid orange;
+    border-radius: 10px;
+
+    background-color: white;
+
+    position: sticky;
+    top: 50px;
 }
 .home{
     grid-area: home;
     font-size: 15px;
     border: 0.5px solid orange;
+
+    border-radius: 10px;
 }
 .tech{
     grid-area: tech;
     font-size: 15px;
     border: 0.5px solid orange;
+
+    border-radius: 10px;
 }
 .interior{
     grid-area: interior;
     font-size: 15px;
     border: 0.5px solid orange;
+
+    border-radius: 10px;
 }
 .auto{
     grid-area: automobil;
     font-size: 15px;
     border: 0.5px solid orange;
+
+    border-radius: 10px;
 }
 .cloth{
     grid-area: cloth;
     font-size: 15px;
     border: 0.5px solid orange;
+
+    border-radius: 10px;
 }
 .child{
     grid-area: child;
     font-size: 15px;
     border: 0.5px solid orange;
+
+    border-radius: 10px;
 }
 .beauty{
     grid-area: beauty;
     font-size: 15px;
     border: 0.5px solid orange;
+
+    border-radius: 10px;
 }
 .health{
     grid-area: health;
     font-size: 15px;
     border: 0.5px solid orange;
+
+    border-radius: 10px;
 }
 .relaxation{
     grid-area: relaxation;
     font-size: 15px;
     border: 0.5px solid orange;
+
+    border-radius: 10px;
 }
 .equipment{
     grid-area: equipment;
     font-size: 15px;
     border: 0.5px solid orange;
+
+    border-radius: 10px;
 }
 
-.content{
+.slider{
     display: grid;
-    grid-template-areas: "aboutText" "aboutCompany";
+    grid-template-areas: "picture aboutText" "picture aboutCompany";
     margin-top: 70px;
     text-align: right;
-    border: 0.5px solid orange;
+    border: 2px solid orange;
+    border-radius: 10px;
 }
 .aboutText{
     grid-area: aboutText;
 }
 .aboutCompany{
     grid-area: aboutCompany;
+}
+.picture{
+    grid-area: picture;
+}
+
+.selectForWho{
+    display: grid;
+    grid-template-areas: "forCustomers forBuisness";
+    text-align: center;
+
+}
+.forCustomers{
+    grid-area: forCustomers;
+
+    border: 2px solid a56b00;
+    background-color: #a56b00;
+    color: aliceblue;
+
+    font-size: 20px;
+}
+.forBuisness{
+    grid-area: forBuisness;
+
+    border: 2px solid blue;
+    background-color: blue;
+    color: aliceblue;
+
+    font-size: 20px;
+}
+
+.companyPresent{
+    display: grid;
+    grid-template-areas: 
+    "basketImg customersImg salesmanImg yearWorkImg" 
+    "basketText customersText salesmanText yearWorkText";
+
+    background-color: rgb(245, 245, 245);
+
+    text-align: center;
+}
+.basketImg{
+    grid-area: basketImg;
+}
+.basketText{
+    grid-area: basketText;
+}
+.customersImg{
+    grid-area: customersImg;
+}
+.customersText{
+    grid-area: customersText;
+}
+.salesmanImg{
+    grid-area: salesmanImg;
+}
+.salesmanText{
+    grid-area: salesmanText;
+}
+.yearWorkImg{
+    grid-area: yearWorkImg;
+}
+.yearWorkText{
+    grid-area: yearWorkText;
+}
+
+.forCustomersProduct{
+    display: grid;
+    grid-template-areas: "forCustomersProduct-header forCustomersProduct-header forCustomersProduct-header forCustomersProduct-header forCustomersProduct-header"
+    "dryerForVagetables freezer juicer";
+
+}
+.forCustomersProduct-header{
+    grid-area: forCustomersProduct-header;
+}
+.dryerForVagetables{
+    display: grid;
+    grid-template-areas: "dryerForVegetablesImg" "dryerForVegetablesText";
+    grid-area: dryerForVegetables;
+}
+.dryerForVegetablesImg{
+    grid-area: dryerForVegetablesImg;
+
+}
+.dryerForVegetablesImg img{
+    height: 150px;
+    width: 150px;
+}
+.dryerForVegetablesText{
+    grid-area: dryerForVegetablesText;
+}
+.freezer{
+    display: grid;
+    grid-template-areas: "freezerImg" "freezerText";
+    grid-area: freezer;
+}
+.freezerImg{
+    grid-area: freezerImg;
+}
+.freezerImg img{
+    height: 150px;
+    width: 150px;
+}
+.freezerText{
+    grid-area: freezerText;
+}
+.juicer{
+    display: grid;
+    grid-template-areas: "juicerImg" "juicerText";
+    grid-area: juicer;
+}
+.juicerImg{
+    grid-area: juicerImg;
+}
+.juicerImg Img{
+    height: 150px;
+    width: 150px;
+}
+.juicerText{
+    grid-area: juicerText;
 }
