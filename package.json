@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "npx parcel src/index.html"
+    "watch": "npx parcel src/pages/homePage/index.html"
   },
   "repository": {
     "type": "git",
