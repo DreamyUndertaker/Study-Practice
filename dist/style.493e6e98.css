@@ -279,9 +279,10 @@ body{
 
 .forCustomersProduct{
     display: grid;
-    grid-template-areas: "forCustomersProduct-header forCustomersProduct-header forCustomersProduct-header forCustomersProduct-header forCustomersProduct-header"
-    "dryerForVagetables freezer juicer";
-
+    grid-template-areas: "forCustomersProduct-header forCustomersProduct-header forCustomersProduct-header forCustomersProduct-header"
+    "dryerForVagetables freezer juicer meatGrinder";
+    
+    justify-items: center;
 }
 .forCustomersProduct-header{
     grid-area: forCustomersProduct-header;
@@ -301,6 +302,9 @@ body{
 }
 .dryerForVegetablesText{
     grid-area: dryerForVegetablesText;
+
+    color: blue;
+    font-size: 20px ;
 }
 .freezer{
     display: grid;
@@ -316,6 +320,9 @@ body{
 }
 .freezerText{
     grid-area: freezerText;
+
+    color: blue;
+    font-size: 20px ;
 }
 .juicer{
     display: grid;
@@ -329,8 +336,29 @@ body{
     height: 150px;
     width: 150px;
 }
-.juicerText{
+.juicersText{
     grid-area: juicerText;
+
+    color: blue;
+    font-size: 20px ;
+}
+.meatGrinder{
+    display: grid;
+    grid-template-areas: "meatGrinderImg" "meatGrinderText";
+    grid-area: meatGrinder;
+}
+.meatGrinderImg{
+    grid-area: meatGrinderImg;
+}
+.meatGrinderImg img{
+    height: 150px;
+    width: 150px;
+}
+.meatGrinderText{
+    grid-area: meatGrinderText;
+
+    color: blue;
+    font-size: 20px ;
 }
 
 /*# sourceMappingURL=/style.493e6e98.css.map */
