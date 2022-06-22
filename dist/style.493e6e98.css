@@ -361,4 +361,64 @@ body{
     font-size: 20px ;
 }
 
+.footer{
+    display: grid;
+    grid-template-areas: "aboutPortal forCustomersFooter forSellersFooter startSelling";
+
+}
+.aboutPortal{
+    grid-area: aboutPortal;
+}
+.aboutPortal p{
+    color: blue;
+    font-size: 12px;
+}
+.forCustomersFooter{
+    grid-area: forCustomersFooter;
+}
+.forCustomersFooter p{
+    color: blue;
+    font-size: 12px;
+}
+.socialWeb{
+    display: grid;
+    grid-template-areas: "vkImg youtubeImg yandexImg";
+    width: 150px;
+}
+.vkImg{
+    grid-area: vkImg;
+}
+.vkImg img{
+    height: 40px;
+    width: 40px;
+}
+.youtubeImg{
+    grid-area: youtubeImg;
+}
+.youtubeImg img{
+    height: 40px;
+    width: 40px;
+}
+.yandexImg img{
+    height: 40px;
+    width: 40px;
+}
+.yandexImg{
+    grid-area: yandexImg;
+}
+.forSellersFooter{
+    grid-area: forSellersFooter;
+}
+.forSellersFooter p{
+    color: blue;
+    font-size: 12px;
+}
+.startSelling{
+    grid-area: startSelling;
+}
+.startSelling p{
+    color: blue;
+    font-size: 12px;
+}
+
 /*# sourceMappingURL=/style.493e6e98.css.map */
