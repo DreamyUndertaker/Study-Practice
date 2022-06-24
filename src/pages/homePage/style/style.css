@@ -203,38 +203,32 @@ body{
 
 .slider {
     position: relative;
-  }
-  
-  .slider__container {
+}  
+.slider__container {
     overflow: hidden;
-  }
-  
-  .slider__wrapper {
+}
+.slider__wrapper {
     /* overflow: hidden; */
-  }
-  
-  .slider__items {
+}
+.slider__items {
     display: flex;
     transition: transform 0.5s ease;
-  }
-  
-  .slider_disable-transition {
+}
+.slider_disable-transition {
     transition: none;
-  }
-  
-  .slider__item {
+}
+.slider__item {
     flex: 0 0 100%;
     max-width: 100%;
     user-select: none;
-  }
-  .slider__item img{
+}
+.slider__item img{
     height: 400px;
     width: 1200px;
-  }
+}
 
-  /* кнопки влево и вправо */
-  
-  .slider__control {
+  /* кнопки влево и вправо */  
+.slider__control {
     position: absolute;
     top: 50%;
     display: flex;
@@ -246,48 +240,38 @@ body{
     text-align: center;
     background: rgb(0 0 0 / 100%);
     transform: translateY(-50%);
-  }
-  
-  .slider__control_hide {
+}
+.slider__control_hide {
     display: none;
-  }
-  
-  .slider__control[data-slide="prev"] {
+}
+.slider__control[data-slide="prev"] {
     left: 0;
-  }
-  
-  .slider__control[data-slide="next"] {
+}
+.slider__control[data-slide="next"] {
     right: 0;
-  }
-  
-  .slider__control:hover,
-  .slider__control:focus {
+}
+.slider__control:hover,.slider__control:focus {
     color: #fff;
     text-decoration: none;
     background: rgb(0 0 0 / 30%);
     outline: 0;
-  }
-  
-  .slider__control::before {
+}
+.slider__control::before {
     content: "";
     display: inline-block;
     width: 20px;
     height: 20px;
     background: transparent no-repeat center center;
     background-size: 100% 100%;
-  }
-  
-  .slider__control[data-slide="prev"]::before {
+}
+.slider__control[data-slide="prev"]::before {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
- 
-  .slider__control[data-slide="next"]::before {
+.slider__control[data-slide="next"]::before {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-  }
-  
+}
   /* индикаторы */
-  
-  .slider__indicators {
+.slider__indicators {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -301,9 +285,8 @@ body{
     margin-left: 15%;
     padding-left: 0;
     list-style: none;
-  }
-  
-  .slider__indicators li {
+}
+.slider__indicators li {
     flex: 0 1 auto;
     box-sizing: content-box;
     width: 30px;
@@ -316,11 +299,10 @@ body{
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
     cursor: pointer;
-  }
-  
-  .slider__indicators li.active {
+}
+.slider__indicators li.active {
     background-color: rgb(255 255 255 / 90%);
-  }
+}
 
 .aboutText{
     grid-area: aboutText;
